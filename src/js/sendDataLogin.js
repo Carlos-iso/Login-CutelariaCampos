@@ -125,7 +125,7 @@ function resetFilds() {
 async function saveHeaderToken() {
   const token = await localStorage.getItem("token");
   const patchHeader = {
-    method: "POST",
+    method: "PATCH",
     headers: {
       "x-access-token": token,
       "Content-Type": "application/json",
