@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cutelaria Campos - Login</title>
+    <link rel="icon" type="image/svg+xml" href="src/favicon/Faca.svg">
+    <link rel="stylesheet" href="./src/css/style-login.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="title">Login</h1>
+
+        <div class="msgerror"></div>
+        <div class="msgsuccess"></div>
+
+        <div style="display: none;" class="loader">
+            <div class="loadingio-spinner-disk-xyecf0k9m4">
+                <div class="ldio-tcby9sh2kn">
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <a>Entrando...</a>
+        </div>
+
+        <form class="inputs-login" action="Formulário De Login">
+
+            <div class="label-float">
+                <input type="text" class="email" name="email" placeholder="" required>
+                <label class="email-label" for="email">E-mail</label>
+            </div>
+
+            <div class="label-float">
+                <input type="password" class="password" name="password" placeholder="" required>
+                <label class="password-label" for="password">Senha</label>
+                <img class="eye" src="./src/icons/eye-open.svg" alt="Ver Senha">
+            </div>
+
+        </form>
+
+        <div class="container-btn">
+            <button class="btn-enter">Entrar</button>
+        </div>
+
+        <div class="redirect">
+            <p>Entrar Como
+                <a class="cadastre" href="#">Visitante</a>
+            </p>
+        </div>
+
+        <hr class="division">
+
+        <div class="or">
+            <h1>Ou</h1>
+        </div>
+
+        <div class="other-login">
+            <a href="#"><img src="./src/icons/google.svg" alt="Login Google"></a>
+            <a href="#"><img src="./src/icons/facebook-color.svg" alt="Login Facebook"></a>
+            <a href="#"><img src="./src/icons/microsoft.svg" alt="Login Microsoft"></a>
+        </div>
+
+    </div>
+
+    <script src="src/js/validate-login.js"></script>
+    <script src="src/js/sendDataLogin.js"></script>
+    <script src="./src/js/eye-login.js"></script>
+    
+</body>
+
+</html>
