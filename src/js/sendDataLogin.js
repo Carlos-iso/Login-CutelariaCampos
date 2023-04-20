@@ -7,16 +7,11 @@ const $msgsuccess = document.querySelector(".msgsuccess");
 const urlLocal = "http://localhost:3000";
 const urlRender = "https://api-cutelariacampos.onrender.com";
 const urlBase = urlRender;
-let urlFrontEnd = "#";
+let urlNetlify = "https://login.carloscoding.dev.br";
 let invalidFileld = "Campos Inválidos";
 let $msg = "Erro";
 let $token = "Token";
 let $data = "Data User";
-
-function urlNow() {
-  urlFrontEnd = window.location.href;
-  return urlFrontEnd;
-}
 
 async function validForm() {
   showLoader();
@@ -136,8 +131,7 @@ async function saveHeaderToken() {
       "Content-Type": "application/json",
     },
   };
-  urlNow();
-  await fetch(`${urlFrontEnd}`, patchHeader).catch((err) => console.log(err));
+  await fetch(`${urlNetlify}`, patchHeader).catch((err) => console.log(err));
 }
 
 $btmEnter.addEventListener("click", () => {
