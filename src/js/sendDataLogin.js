@@ -7,7 +7,7 @@ const $msgsuccess = document.querySelector(".msgsuccess");
 const urlLocal = "http://localhost:3000";
 const urlRender = "https://api-cutelariacampos.onrender.com";
 const urlBase = urlRender;
-let urlNetlify = "https://login.carloscoding.dev.br";
+const urlNetlify = "https://login.carloscoding.dev.br";
 let invalidFileld = "Campos Inválidos";
 let $msg = "Erro";
 let $token = "Token";
@@ -125,7 +125,7 @@ function resetFilds() {
 async function saveHeaderToken() {
   const token = await localStorage.getItem("token");
   const patchHeader = {
-    method: "PATCH",
+    method: "GET",
     headers: {
       "x-access-token": token,
       "Content-Type": "application/json",

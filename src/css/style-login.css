@@ -31,7 +31,7 @@ body{
 }
 
 .container{
-    width: auto;
+    width: 240px;
     height: auto;
     position: relative;
     display: flex;
