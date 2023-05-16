@@ -17,7 +17,7 @@ async function validForm() {
   showLoader();
   if (validEmail === true && validPassword === true) {
     let $emailValue = $email.value;
-    let $passwordValue = $password.value;
+    let $passwordValue = $password.value.trim();
 
     let jsonDataCustomer = JSON.stringify({
       email: $emailValue,
